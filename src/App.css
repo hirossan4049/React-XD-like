@@ -1,4 +1,9 @@
+body {
+  background: #1A1A1A;
+}
+
 .App {
+  display: flex;
   text-align: center;
 }
 
