@@ -6,5 +6,8 @@
 }
 
 .headerTitle {
+    margin: auto;
     font-weight: bold;
+    font-size: 18px;
+    position: relative;
 }

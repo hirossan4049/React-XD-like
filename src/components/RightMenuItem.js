@@ -1,9 +1,9 @@
 import styles from "./RightMenuItem.module.css";
 
-const RightMenuItem = () => {
+const RightMenuItem = ({title}) => {
     return (
         <div className={styles.RightMenuItem}>
-            <p>ID</p>
+            <p>{title}</p>
             <input/>
         </div>
     )

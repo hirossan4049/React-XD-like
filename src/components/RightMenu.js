@@ -5,7 +5,10 @@ import RightMenuItem from "./RightMenuItem";
 const RightMenu = () => {
     return (
         <div className={styles.rightMenu}>
-            <RightMenuItem></RightMenuItem>
+            <RightMenuItem title="ID"></RightMenuItem>
+            <RightMenuItem title="色"></RightMenuItem>
+            <RightMenuItem title="フォント"></RightMenuItem>
+
         </div>
     )
 }

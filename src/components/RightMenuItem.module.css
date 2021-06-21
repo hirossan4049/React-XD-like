@@ -13,6 +13,8 @@
 .RightMenuItem p {
     margin: auto 0;
     vertical-align: middle;
+    min-width: 74px;
+    text-align: left;
 }
 
 .RightMenuItem input {
