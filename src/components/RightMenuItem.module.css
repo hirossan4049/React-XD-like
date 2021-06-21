@@ -1,0 +1,28 @@
+.RightMenuItem {
+    display: flex;
+    width: 90%;
+    height: 42px;
+    background: none;
+    /* border-width: 0; */
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.RightMenuItem p {
+    margin: auto 0;
+    vertical-align: middle;
+}
+
+.RightMenuItem input {
+    margin-left: 10px;
+    padding: 6px 6px;
+    border-radius: 6px;
+    background: #2E2E2E;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}

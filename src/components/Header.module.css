@@ -1,5 +1,10 @@
 .header {
+    height: 60px;
     display: flex;
     background: #343434;
     color: white;
+}
+
+.headerTitle {
+    font-weight: bold;
 }

@@ -1,10 +1,13 @@
 import styles from "./Header.module.css";
 
+import fulllogo from "../img/retrato-fulllogo.png"
+
+
 const Header = () => {
     return (
         <header className={styles.header}>
-            <p>Retrato</p>
-            <p>title</p>
+            <img src={fulllogo}/>
+            <p className={styles.headerTitle}>title</p>
             <p>icon</p>
         </header>
     )
