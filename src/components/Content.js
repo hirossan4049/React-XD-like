@@ -1,8 +1,11 @@
 import styles from "./Content.module.css"
+import ContentItem from './ContentItem';
 
-const Content = () => {
+
+const Content = ({contents}) => {
     return (
         <div className={styles.content}>
+            <ContentItem x={100} y={10}/>
         </div>
     )
 }
