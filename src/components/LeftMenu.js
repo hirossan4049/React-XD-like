@@ -2,6 +2,8 @@ import LeftMenuItem from "./LeftMenuItem";
 import styles from "./LeftMenu.module.css";
 
 const LeftMenu = () => {
+
+
     return (
         <div className={styles.leftMenu}>
             <LeftMenuItem widgetName={"テキスト"}/>
