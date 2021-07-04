@@ -65,21 +65,22 @@ export function useInteractJS(
       })
   }
 
-  const disable = () => {
-    interact((interactRef.current as unknown) as HTMLElement).unset()
-  }
+  // const disable = () => {
+  //   interact((interactRef.current as unknown) as HTMLElement).unset()
+  // }
 
   useEffect(() => {
     if (isEnabled) {
       enable()
     } else {
-      disable()
+      enable()
+      // disable()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isEnabled])
 
   useEffect(()=>{
-    return disable
+    return enable
   },[])
 
   return {
@@ -93,6 +94,6 @@ export function useInteractJS(
     position: _position,
     isEnabled,
     enable: () => setEnable(true),
-    disable: () => setEnable(false)
+    // disable: () => setEnable(false)
   }
 }
