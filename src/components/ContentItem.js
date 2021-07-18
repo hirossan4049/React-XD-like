@@ -12,7 +12,7 @@ const ContentItem = ({x, y}) => {
     console.log(`${x}px`)
     console.log(`${y}px`)
     return (
-          <div
+          <input
             ref={interact.ref}
             style={{
               ...interact.style,
