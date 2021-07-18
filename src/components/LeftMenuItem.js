@@ -26,7 +26,7 @@ const LeftMenuItem = ({widgetName}) => {
         // const pos = React.findDOMNode().offset();
         // const pos = document.getElementById('content')
         // handleLeftItemAdd(event.pageX - 780, event.pageY - 100);
-        handleLeftItemAdd(event.pageX, event.pageY);
+        handleLeftItemAdd(event.pageX - 850, event.pageY - 100);
     }
 
     const handleTouchMove = event => {
