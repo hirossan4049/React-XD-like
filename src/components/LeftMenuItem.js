@@ -18,7 +18,7 @@ const LeftMenuItem = ({widgetName}) => {
     const handleDragEnd = event => {
         console.log("onDragEnd");
         console.log("onDragEnd", event.pageX, event.pageY);
-        handleLeftItemAdd(3,3);
+        handleLeftItemAdd(event.pageX, event.pageY);
     }
 
     // const handleTouchMove = event => {
