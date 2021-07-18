@@ -8,7 +8,6 @@ const Content = ({contents}) => {
             {contents.map((content) => (
                 content
             ))}
-            {/*<ContentItem x={300} y={50}/>*/}
         </div>
     )
 }

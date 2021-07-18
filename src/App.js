@@ -22,47 +22,17 @@ function App() {
 
     const HandleLeftItemAdd = (x, y) => {
         console.log("handleLeftItemADdd", x, y)
-        // const interct = useInteractJS({
-        //   width: 100,
-        //   height: 100,
-        //   x: x,
-        //   y: y
-        // })
-
-        // console.log( document.getElementsByClassName("Content"));
-        // console.log(interct)
         console.log(contents)
         setContents([...contents, <ContentItem x={x} y={y}/>]);
-        setContents((pre_contents) => {
-            console.log("hey!")
-            console.log(contents)
-            // ReactDOM.render(ContentView, document.getElementById('root'));
-
-            return pre_contents
-        })
-        // console.log(contents)
-        // ReactDOM.render(ContentView, document.getElementById('root'));
+        // setContents((pre_contents) => {
+        //     // ReactDOM.render(ContentView, document.getElementById('root'));
+        //     return pre_contents
+        // })
         console.log("handleLeftItemAdded", x, y)
-
-        // document.body.insertAdjacentHTML('afterbegin',
-        // "<ContentItem x={$x} y={$y}/>"
-        // "\
-        //   <h1>crap</h1>\
-        //   <div\
-        //   ref={interact.ref}\
-        //   style={{\
-        //     ...interact.style,\
-        //     border: '2px solid #0489B1',\
-        //     backgroundColor: '#A9D0F5'\
-        //   }}\
-        // />\
-        // </div>\
-        // "
-        // );
     }
 
     const ContentView = (
-        <Content id={"content"} className={"Content"} contents={contents} />
+        <Content id={"content"} className={"Content"} contents={contents}/>
     )
 
     useEffect(() => {
@@ -70,7 +40,7 @@ function App() {
         console.log(contents);
         try {
             ReactDOM.render(ContentView, document.getElementById('content'));
-        }catch (_) {
+        } catch (_) {
         }
     })
 
