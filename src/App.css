@@ -11,7 +11,6 @@ html {
 
 .App {
   display: flex;
-  text-align: center;
   position: relative;
   height: 10px;
 }

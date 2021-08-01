@@ -20,17 +20,19 @@ const LeftMenuItem = ({widgetName}) => {
 
     const handleDragEnd = event => {
         console.log("onDragEnd");
+        console.log("clientXY", event.clientX, event.clientY);
         console.log("onDragEnd", event.pageX, event.pageY);
         const rect = document.getElementById("root").getBoundingClientRect()
-        // fixme:
+        // fixme: ゴリ押し。
         // const pos = React.findDOMNode().offset();
         // const pos = document.getElementById('content')
         // handleLeftItemAdd(event.pageX - 780, event.pageY - 100);
-        handleLeftItemAdd(event.pageX - 850, event.pageY - 100);
+
+        handleLeftItemAdd(event.clientX - 350, event.clientY - 60);
     }
 
     const handleTouchMove = event => {
-        console.log("handleTouchMove");
+        // console.log("handleTouchMove");
     }
 
     const handleOnDrop = event => {

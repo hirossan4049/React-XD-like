@@ -90,7 +90,7 @@ export function useInteractJS(
       width: _position.width + 'px',
       height: _position.height + 'px',
       overflow: "hidden",
-      position: 'absolute' as CSSProperties['position']
+      position: 'absolute' as CSSProperties['position'],
     },
     position: _position,
     isEnabled,

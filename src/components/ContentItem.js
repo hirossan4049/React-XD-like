@@ -1,10 +1,10 @@
 import {useInteractJS} from '../hooks';
-
+import styles from "./ContentItem.module.css"
 
 const ContentItem = ({x, y}) => {
     const interact = useInteractJS({
       width: 100,
-      height: 100,
+      height: 30,
       x: x,
       y: y
     })
@@ -14,10 +14,11 @@ const ContentItem = ({x, y}) => {
     return (
           <input
             ref={interact.ref}
+            className={styles.contentItem}
+            type="text"
+            value="Text"
             style={{
               ...interact.style,
-              border: '2px solid #0489B1',
-              backgroundColor: '#A9D0F5'
             }}
           />
     )

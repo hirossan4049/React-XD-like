@@ -1,0 +1,19 @@
+
+
+.contentItem {
+    /* border: none; */
+    border: 2px dashed rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contentItem:hover {
+    border: 2px dashed rgba(255, 255, 255, 0.8);
+}
+
+.contentItem:focus {
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
